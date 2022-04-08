@@ -1,0 +1,39 @@
+.works
+    &__title
+        text-align: center
+        font-weight: 700
+        font-size: 16px
+        line-height: 21x
+        position: relative
+        @include round_center
+    &__subtitle
+        font-weight: 700
+        font-size: 36px
+        line-height: 60px
+        text-align: center
+    &__devider
+        margin: 0 auto
+        @include devider
+        margin-top: 25px
+    &__wrapper
+        margin-top: 50px
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-template-rows: 1fr 1fr
+        gap: 5px 5px
+        #plans
+            grid-column: 4 / 5
+            grid-row: 1 / 3
+        #mac
+            grid-column: 2 / 4
+            grid-row: 2 / 3
+    &__item
+        transition: 0.5s all
+        &:hover
+            transform: scale(1.02)
+            filter: brightness(0.7)
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 5px

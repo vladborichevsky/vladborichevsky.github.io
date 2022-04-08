@@ -1,0 +1,62 @@
+.about
+	// min-height: 780px
+	&__wrapper
+		width: 100%
+		height: 100%
+		position: relative
+		padding: 120px 0 60px 0
+		display: flex
+		justify-content: space-between
+	&__photo
+		width: 400px
+		height: 600px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__descr
+		margin-left: 68px
+	&__title
+		font-weight: 700
+		font-size: 16px
+		line-height: 24px
+		z-index: 2
+		position: relative
+		padding: 6px 0 0 12px
+		@include round
+	&__subtitle
+		font-weight: 700
+		font-size: 36px
+		line-height: 60px
+	&__devider
+		@include devider
+	&__info
+		width: 570px
+		margin-top: 20px
+		font-weight: 500
+		font-size: 15px
+		line-height: 21px
+	&__skills
+		width: 570px
+		grid-template-columns: 260px 260px
+		display: grid
+		gap: 50px 40px 
+		margin-top: 40px
+		position: relative			
+	&__item
+		position: relative
+		@include round
+		&__title
+			font-weight: 700
+			font-size: 14px
+			line-height: 21px
+			padding-left: 60px
+		&__descr
+			font-weight: 500
+			font-size: 12px
+			line-height: 18px
+			padding-left: 60px
+		&__img
+			position: absolute
+			top: 15px
+			left: 15px

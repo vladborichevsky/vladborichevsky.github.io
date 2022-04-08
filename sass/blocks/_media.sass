@@ -1,0 +1,372 @@
+@media (max-width: 1350px)
+	.container
+		max-width: 960px
+	.promo
+		.social
+			left: -150px
+	.contacts
+		padding-left: 0
+		margin-top: 100px
+		&__wrapper
+			display: grid
+			grid-template-columns: 400px 500px
+		&__item
+			img
+				width: 400px
+		&__btn
+			padding: 10px 10px
+			font-size: 15px
+			margin-right: 30px
+	.feed-form
+		grid-template-columns: 1fr 1fr
+	.price-list
+		&__wrapper
+			padding-left: 0
+
+
+@media (max-width: 1200px)
+	.container
+		max-width: 920px
+	.promo
+		.social
+			display: none
+	.about
+		&__wrapper
+			padding: 70px 0 40px 0
+		&__photo
+			width: 400px
+			height: 600px
+		&__descr
+			margin-left: 0px
+			width: 475px
+		&__info
+			width: 100%
+			margin-top: 20px
+		&__subtitle
+			font-size: 28px
+			line-height: 45px
+		&__skills
+			width: 100%
+			margin-top: 40px
+			grid-template-columns: 100%
+			gap: 20px 0
+	.hamburger__wrapper
+		&:hover
+			background-color: transparent
+			box-shadow: none
+	.skills
+		margin-top: 0
+		&__item
+			padding: 30px 10px 25px 10px
+		&__wrapper
+			margin-top: 30px
+			grid-template-columns: repeat(auto-fit, 270px)
+			justify-content: center
+		&__devider
+			margin-top: 10px
+		&__scales
+			margin-top: 60px
+			margin-bottom: 60px
+	.price-list
+		&__wrapper
+			padding-left: 25px
+			grid-template-columns: 1fr 1fr
+			column-gap: 150px
+			margin-top: 40px
+	.contacts
+		&__wrapper
+			grid-template-columns: 3.5fr 5fr
+			column-gap: 20px
+		&__item
+			img
+				width: 100%
+
+
+@media (max-width: 992px)
+	.container
+		max-width: 720px
+	.promo
+		padding-top: 200px
+		padding-left: 40px
+		h1
+			font-size: 32px
+			max-width: 400px
+			line-height: 42px
+		&__buttons
+			margin-top: 50px
+	.btn
+		&:hover
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
+			margin-right: 19px
+			border-radius: 5px
+			color: #000
+			background: $main_color
+	.btn_no_color
+		&:hover
+			color: #000
+		&__block
+			&__items
+				&:hover
+					color: #ffff
+					&:before
+						background-color: transparent
+	.menu
+		&__social
+			a
+				&:hover
+					background-color: transparent
+					box-shadow: none
+	.about
+		&__wrapper
+			padding: 70px 0 40px 0
+		&__photo
+			width: 300px
+			height: 450px
+		&__descr
+			width: 390px
+		&__info
+			width: 100%
+			margin-top: 10px
+		&__subtitle
+			font-size: 28px
+			line-height: 45px
+		&__skills
+			width: 100%
+			margin-top: 0
+			grid-template-columns: 100%
+			gap: 0 0
+	.experience
+		padding: 45px 0 63px 0
+		&__wrapper
+			column-gap: 70px
+		&__item
+			&__text
+				width: 290px
+	.skills
+		&__item
+			padding: 10px 10px 10px 10px
+	.price-list
+		&__wrapper
+			column-gap: 60px
+	.feed-form
+		margin-top: 15px
+		gap: 20px 20px
+	.contacts
+		&__item
+			&__social
+				a
+					&:hover
+						background-color: transparent
+						box-shadow: none
+		&__btn
+			margin-right: 50px
+			&:hover
+				background: $main_color
+				color: #000
+				box-shadow: none
+	.arrow_up
+		width: 42px
+		height: 42px
+		&:hover
+			background-color: transparent
+			box-shadow: none
+
+
+@media (max-width: 768px)
+	.container
+		max-width: 540px
+		margin: 0 auto
+	.promo
+		padding-top: 170px
+		padding-left: 30px
+		h1
+			font-size: 28px
+			max-width: 400px
+			line-height: 35px
+		&__buttons
+			padding-left: 0
+	.btn
+		padding: 8px 15px
+	.btn_no_color
+		padding: 8px 15px
+	.about
+		&__wrapper
+			margin: 0 auto
+			padding: 70px 0 40px 0
+			display: grid
+			grid-template-columns: 1fr
+		&__photo
+			width: 350px
+			height: 420px
+			margin: 0 auto
+		&__descr
+			margin: 0 auto
+			margin-top: 30px
+			width: 350px
+		&__info
+			width: 100%
+			margin-top: 10px
+		&__subtitle
+			font-size: 25px
+			line-height: 35px
+	.experience
+		padding: 40px 0 63px 0
+		&__wrapper
+			margin: 0 auto
+			display: block
+			padding-left: 100px
+			&__col-2
+				margin-top: 40px
+		&__item
+			&__title
+				text-align: center
+			&__text
+				width: 80%
+	.skills
+		&__wrapper
+			margin: 25px 20px 0 20px
+		&__item
+			&__header
+				margin-top: 15px
+			&__descr
+				margin-top: 5px
+		&__scales
+			grid-template-columns: 1fr 1fr
+			gap: 10px 35px
+			&__item
+				&__scale
+					margin-top: 5px
+	.works
+		&__devider
+			margin-top: 5px
+		&__wrapper
+			margin-top: 25px
+	.price-list
+		&__wrapper
+			padding: 0 60px 0 70px
+			display: grid
+			grid-template-columns: 1fr
+			grid-template-rows: repeat(6, 40px)
+			grid-auto-rows: 40px
+			row-gap: 25px
+	.contacts
+		&__item
+			&__photo
+				display: none
+		&__wrapper
+			grid-template-columns: 1fr
+
+
+@media (max-width: 576px)
+	.container
+		width: 100%
+		padding: 0 10px
+	.promo
+		padding-top: 200px
+		padding-left: 5px
+		h1
+			font-size: 25px
+			max-width: 265px
+			line-height: 35px
+			margin-top: 20px
+		&__descr
+			font-size: 13px
+			line-height: 20px
+		&__buttons
+			padding-left: 0
+	.btn
+		padding: 8px 15px
+		font-size: 13px
+	.btn_no_color
+		padding: 5px 13px
+	.hamburger__wrapper
+		top: 15px
+		right: 15px
+	.menu
+		&__block
+			width: 230px
+			nav
+				height: 250px
+				font-weight: 500
+				font-size: 18px
+				line-height: 30px
+	.about
+		&__photo
+			width: 300px
+			height: 350px
+		&__descr
+			width: 300px
+		&__item__descr
+			width: 95%
+	.experience
+		&__title
+			font-size: 28px
+			line-height: 50px
+		&__wrapper
+			padding: 30px 0 0 20px 
+			&__col-1, &__col-2
+				width: 100%
+		&__item
+			&::before
+				left: -20px
+				height: 135%
+			&__head
+				column-gap: 10px
+				&::before
+					left: -20px
+					width: 20px
+			&__title
+				text-align: left
+				&::before
+					left: -27px
+	.skills
+		&__subtitle
+			font-size: 22px
+			line-height: 40px
+		&__item
+			margin: 0 auto
+			width: 90%
+			&__header
+				margin-top: 5px
+			&__descr
+				margin-top: 0
+		&__scales
+			grid-template-columns: 1fr
+			gap: 0px 0px
+			&__item
+				margin: 0 auto
+				width: 80%
+	.works
+		&__subtitle
+			font-size: 28px
+		&__wrapper
+			display: block
+		&__item
+			width: 250px
+			height: 250px
+			margin: 0 auto
+			margin-bottom: 10px
+	.price-list
+		&__wrapper
+			padding: 0 30px 0 30px
+		&__item
+			&__descr
+				font-size: 10px
+			&__header
+				font-size: 13px
+			&__price
+				font-size: 13px
+	.contacts
+		&__item
+			&__subtitle
+				font-size: 28px
+	.feed-form
+		display: block
+		&__input
+			margin-bottom: 15px
+		&__triggers
+			display: block
+		&__policy
+			margin-top: 15px
+	#text
+		min-height: 110px

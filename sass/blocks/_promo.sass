@@ -1,0 +1,55 @@
+.promo
+	min-height: 100vh
+	background: url(../img/Background.jpg) no-repeat 60%/cover
+	position: relative
+	padding: 206px 0 0 10px
+	padding-left: 50px
+	&__descr
+		font-weight: 700
+		font-size: 16px
+		line-height: 16px
+		position: relative
+		z-index: 2
+		padding: 11px 0 0 12px
+		@include round
+	h1
+		margin-top: 9px
+		max-width: 532px
+		font-weight: 700
+		font-size: 48px
+		line-height: 60px
+	&__link
+		font-weight: 700
+		font-size: 14px
+		line-height: 21px
+		text-decoration: none
+		color: $second_color
+		&:hover
+			transition: 0.5s all
+			color: $main_color
+	&__buttons
+		margin-top: 20px
+		padding-left: 50px
+	.social
+		width: 350px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		transform: rotate(-90deg)
+		position: fixed
+		top: 45%
+		left: -120px
+		img
+			width: 30px
+		a
+			width: 55px
+			height: 55px
+			border: 0 solid $second_color
+			border-radius: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+			&:hover
+				transition: 0.5s all
+				background-color: $main_color
+				box-shadow: 0px 0px 10px black

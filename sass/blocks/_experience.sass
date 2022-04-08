@@ -1,0 +1,91 @@
+.experience
+	padding: 60px 0 63px 0
+	margin: 0 auto
+	&__subtitle
+		font-weight: 700
+		font-size: 16px
+		line-height: 20px
+		text-align: center
+		position: relative
+		@include round_center
+	&__title
+		font-weight: 700
+		font-size: 36px
+		line-height: 60px
+		text-align: center
+		margin-top: 5px
+	&__devider
+		margin-top: 25px
+		position: relative
+		margin: 0 auto
+		@include devider
+	&__wrapper
+		margin: 0 auto
+		padding: 60px 65px 0 65px
+		display: grid
+		grid-template-columns: 1fr 1fr
+		grid-template-rows: 30px repeat(2, 190px)
+		column-gap: 120px
+	&__item
+		position: relative
+		&:before
+			content: ''
+			background-color: $second_color
+			width: 1px
+			height: 145%
+			position: absolute
+			left: -58px
+			top: -54px
+		&__head
+			margin-top: 45px
+			display: grid
+			grid-template-columns: 36px auto
+			grid-template-rows: 18px auto
+			column-gap: 20px
+			position: relative
+			&:before
+				content: ''
+				background-color: $second_color
+				width: 58px
+				height: 1px
+				position: absolute
+				left: -57px
+				top: 49%
+		&__title
+			font-weight: 700
+			font-size: 20px
+			line-height: 33px
+			position: relative
+			&:before
+				content: ''
+				background-color: $main_color
+				width: 16px
+				height: 16px
+				border-radius: 100%
+				position: absolute
+				left: -65px
+				top: 50%
+				transform: translateY(-50%)
+				z-index: -1
+		&__subtitle
+			font-weight: 700
+			font-size: 14px
+			line-height: 21px
+		&__descr
+			font-weight: 500
+			font-size: 12px
+			line-height: 18px
+		&__text
+			margin-top: 12px
+			font-weight: 500
+			font-size: 12px
+			line-height: 18px
+			width: 375px
+		&__icon
+			position: relative
+			grid-row: 1 / 3
+			@include round
+			img
+				position: absolute
+				bottom: -3px
+				right: -3px

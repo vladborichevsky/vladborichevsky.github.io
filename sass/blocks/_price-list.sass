@@ -1,0 +1,51 @@
+.price-list
+	margin-top: 66px
+	&__title
+		font-weight: 700
+		font-size: 16px
+		line-height: 20px
+		text-align: center
+		position: relative
+		@include round_center
+	&__devider
+		margin: 0 auto
+		margin-top: 31px
+		@include devider
+	&__wrapper
+		padding-left: 75px
+		margin: 0 auto
+		margin-top: 91px
+		display: grid
+		grid-template-columns: 340px 340px
+		grid-template-rows: minmax(45px, auto) minmax(45px, auto) minmax(45px, auto)
+		grid-auto-rows: minmax(45px, auto)
+		column-gap: 290px
+		row-gap: 15px
+	&__item
+		position: relative
+		&__header
+			display: flex
+			justify-content: space-between
+		&__subtitle
+			font-weight: 700
+			font-size: 14px
+			line-height: 21px
+			position: relative
+			&:before
+				content: ''
+				background-color: $main_color
+				width: 15px
+				height: 15px
+				border-radius: 100%
+				position: absolute
+				left: -25px
+				top: 0
+		&__price
+			font-weight: 700
+			font-size: 14px
+			line-height: 21px
+		&__descr
+			font-weight: 500
+			font-size: 12px
+			line-height: 18px
+

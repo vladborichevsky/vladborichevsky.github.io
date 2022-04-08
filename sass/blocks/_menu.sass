@@ -1,0 +1,148 @@
+.hamburger
+	height: 25px
+	width: 36px
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	align-items: center
+	position: absolute
+	top: 22%
+	right: 9%
+	div
+		width: 30px
+		height: 4px
+		background: $second_color
+	&__wrapper
+		position: absolute
+		top: 25px
+		right: 25px
+		height: 45px
+		width: 45px
+		border-radius: 100%
+		cursor: pointer
+		&:hover
+			transition: 0.5s all
+			background-color: $main_color
+			box-shadow: 0px 0px 10px black
+.menu
+	position: fixed
+	height: 100%
+	width: 100%
+	top: 0
+	left: -100%
+	z-index: 10
+	transition: 0.5s all
+	opacity: 0
+	visibility: hidden
+	&.active
+		left: 0
+		visibility: visible
+		opacity: 1
+	&__block
+		width: 265px
+		height: 100%
+		background-color: $main_color
+		color: #FFFFFF
+		position: absolute
+		padding-top: 25vh
+		padding-left: 70px
+		z-index: 11
+		nav
+			height: 300px
+			font-weight: 500
+			font-size: 22px
+			line-height: 36px
+			display: flex
+			justify-content: space-between
+			flex-direction: column
+		&__items
+			height: 250px
+			position: relative
+			cursor: pointer
+			color: #ffff
+			text-decoration: none
+			&:before
+				content: ''
+				width: 15px
+				height: 15px
+				border: 3px solid #FFFF
+				border-radius: 100%
+				position: absolute
+				top: 8px
+				left: -35px
+			&:hover
+				transition: 0.5s all
+				color: $second_color
+				&:before
+					content: ''
+					width: 15px
+					height: 15px
+					border-radius: 100%
+					position: absolute
+					top: 8px
+					left: -35px
+					background-color: #fff
+	&__social
+		display: flex
+		justify-content: space-between
+		position: absolute
+		bottom: 25px
+		left: 50%
+		transform: translateX(-50%)
+		width: 85%
+		img
+			width: 25px
+		a
+			width: 45px
+			height: 45px
+			border: 0 solid #000000
+			border-radius: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+			&:hover
+				transition: 0.5s all
+				background-color: #eba11a
+				box-shadow: 0px 0px 10px black	
+	&__overlay
+		position: fixed
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		background-color: $second_color
+		opacity: 0.5
+	&__exit
+		position: absolute
+		top: 10px
+		right: 10px
+		width: 35px
+		height: 35px
+		cursor: pointer
+		padding: 6px
+		&:hover
+			.line_1
+				transition: 0.5s all
+				background-color: #fff
+			.line_2
+				transition: 0.5s all
+				background-color: #fff
+			
+		.line_1
+			position: absolute
+			top: 15px
+			right: 0
+			width: 100%
+			height: 4px
+			background-color: $second_color
+			transform: rotate(45deg)
+		.line_2
+			position: absolute
+			top: 15px
+			right: 0
+			width: 100%
+			height: 4px
+			background-color: $second_color
+			transform: rotate(-45deg)
+
+
